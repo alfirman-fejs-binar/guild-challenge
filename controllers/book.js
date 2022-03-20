@@ -1,8 +1,8 @@
-const homepage = (req, res) => {
-  res.render("homepage.ejs");
+const homePage = (req, res) => {
+  res.render("home-page.ejs");
 };
 const categoryPage = (req, res) => {
-  res.render("category.ejs");
+  res.render("category-page.ejs");
 };
 
-module.exports = { homepage, categoryPage };
+module.exports = { homPage, categoryPage };
