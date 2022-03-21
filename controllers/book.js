@@ -10,4 +10,9 @@ const registerPage = (req, res) => {
   res.render("register-page", { title });
 };
 
-module.exports = { homPage, categoryPage, registerPage };
+const detailPage = (req, res) => {
+  const id = req.params.id
+  res.render("detail-page.ejs", {id: id} );
+}
+
+module.exports = { homePage, categoryPage, registerPage, detailPage };
