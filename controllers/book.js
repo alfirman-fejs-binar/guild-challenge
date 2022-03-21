@@ -1,13 +1,13 @@
-const login = (req, res) => {
-res.render ("")
-}
-
-
 const homePage = (req, res) => {
   res.render("home-page.ejs");
 };
+
 const categoryPage = (req, res) => {
   res.render("category-page.ejs");
+};
+
+const login = (req, res) => {
+res.render ("login-page");
 };
 
 const registerPage = (req, res) => {
@@ -15,4 +15,4 @@ const registerPage = (req, res) => {
   res.render("register-page", { title });
 };
 
-module.exports = { homPage, categoryPage, registerPage };
+module.exports = { homPage, loginPage, categoryPage, registerPage };
