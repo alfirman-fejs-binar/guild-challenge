@@ -1,13 +1,16 @@
 const homePage = (req, res) => {
-  res.render("home-page.ejs");
+  const title = 'Home';
+  res.render("home-page.ejs", { title });
 };
 
 const categoryPage = (req, res) => {
-  res.render("category-page.ejs");
+  const title = 'Category';
+  res.render("category-page.ejs", { title });
 };
 
 const loginPage = (req, res) => {
-res.render ("login-page");
+  const title = 'Login';
+  res.render ("login-page", { title });
 };
 
 const registerPage = (req, res) => {
