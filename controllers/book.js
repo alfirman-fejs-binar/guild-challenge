@@ -4,7 +4,7 @@ const homepage = (req, res) => {
 
 const detailPage = (req, res) => {
   const id = req.params.id
-  res.render("detailPage.ejs", {id: id} );
+  res.render("detail-page.ejs", {id: id} );
 }
 
 
