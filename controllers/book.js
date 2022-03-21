@@ -6,7 +6,7 @@ const categoryPage = (req, res) => {
   res.render("category-page.ejs");
 };
 
-const login = (req, res) => {
+const loginPage = (req, res) => {
 res.render ("login-page");
 };
 
@@ -15,4 +15,9 @@ const registerPage = (req, res) => {
   res.render("register-page", { title });
 };
 
-module.exports = { homPage, loginPage, categoryPage, registerPage };
+const shoppingCartPage = (req, res) => {
+  const title = 'Shopping Cart';
+  res.render("shopping-cart-page", { title });
+};
+
+module.exports = { homePage, loginPage, categoryPage, registerPage, shoppingCartPage };
