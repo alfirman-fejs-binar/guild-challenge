@@ -1,3 +1,8 @@
+const login = (req, res) => {
+res.render ("")
+}
+
+
 const homePage = (req, res) => {
   res.render("home-page.ejs");
 };

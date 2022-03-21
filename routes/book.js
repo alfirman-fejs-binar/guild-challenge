@@ -1,7 +1,7 @@
 const { Router } = require("express");
 const router = Router();
 
-const { homePage, categoryPage, registerPage } = require("../controllers/book.js");
+const { homePage, login, categoryPage, registerPage } = require("../controllers/book.js");
 
 router.get("/", homePage);
 router.get("/category", categoryPage);
